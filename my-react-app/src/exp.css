@@ -1,0 +1,15 @@
+.nav{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-left: 60vw;
+    margin-top: 0;
+    border-bottom: 1px solid white;
+
+}
+ nav ul li:hover{
+    border-bottom: 1px solid black;
+}
+.image{
+    width: 5rem;
+}
