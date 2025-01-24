@@ -1,3 +1,4 @@
+<h1>Day-1</h1>
 Composability refers to the ability to combine or compose smaller, independent, and reusable components or elements to create more complex systems.
 
 React -> Declarative , not imperative
@@ -10,7 +11,7 @@ We use functions as components.
 
 Vite recommend use .jsx if using jsx syntax.
 
- console.log(<h1>Hello</h1>) -> return a object.
+ console.log(&lt;h1>Hello&lt;/h1>) -> return a object.
 
 Declarative -> Describe. 
 
@@ -18,10 +19,10 @@ createRoot(document.getElementById('root')).render( Main()) -> Works !!
 
 PascalCase.
 
-<Page></Page> -> Works same
+&lt;Page>&lt;/Page> -> Works same
 Components -> Functions which return react elements.
 
-<Fragment> or <> -> Avoid unnecessary nested element in html.
+&lt;Fragment> or &lt;> -> Avoid unnecessary nested element in html.
 
 className b'coz of ul.className = "" in js.
 
@@ -85,7 +86,7 @@ Car.js:
 import styles from './my-style.module.css'; 
 
 const Car = () => {
-  return <h1 className={styles.bigblue}>Hello Car!</h1>;
+  return &lt;h1 className={styles.bigblue}>Hello Car!&lt;/h1>;
 }
 
 export default Car;
@@ -102,3 +103,35 @@ _Note_ : react get compiled  in js .
 - Try to put logic of js  and { } separately.
 - We can pass any data types to  react components.
 _Note_ : props are js objects, run as many times as components are called.
+
+---
+<h1>Day-2</h1>
+
+# Destructuring The Object 
+```
+const {img , name} = person // important to use same names
+const {img : image} = person // to rename
+``` 
+- ### Props can destructure in function argument space.
+```
+func({name , img})
+```
+_Note_ : Use func(props) for better differ between outside and inside function vars .
+
+## Conditional Rendering 
+- ### {value && restOfCode} 
+- ### React use js under the hood so we can use js inside style={{}} also.
+- ### {condition ? TrueResult : FalseResult}
+
+## Static Asset Handling
+- ### Set paths inside the jsx like this
+```
+ import imgURL from "./img.png" 
+```
+- ### _B'coz the vite restructure the whole file structure_
+
+<h1>Day-2</h1>
+# map method
+-  ### array.map(callback func)
+## The rect don't render objects made by us. It just render the specific type of objects like &gt;h1>Hi&gt;h1>. (via create element method)
+
